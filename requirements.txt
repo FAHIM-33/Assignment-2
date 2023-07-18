@@ -1,0 +1,10 @@
+NO LOREM IPSUM text!
+
+Careers section is optional
+
+footer icons are clickable buttons (min 3 btn)
+
+Icons in-text have less marks and are optional.
+
+Bonus - Tab title & logo, Videos section hover icons & text.
+        Responsive Tab view.
