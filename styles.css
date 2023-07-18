@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
 *{
     border: none;
     margin: 0;
@@ -5,9 +6,100 @@
     text-decoration: none;
     list-style: none;
 }
+:root {
+    --pink:#FF42A5;
+}
+
+
+/* ----------------Shared styles-------------  */
+.centered-section{
+    width: 80%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+a{
+    min-width: fit-content;
+}
+
 body{
     max-width: 1440px;
+    margin: 0 auto;
 }
+/* ______________________Header_________________ */
+nav{
+    display: flex;
+    gap: 10%;
+    border: 1px solid red;
+    padding: 2rem 0;
+}
+nav > *{
+    min-width: min-content;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+    /* border: 1px solid blue; */
+}
+
+.logo > h1{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 2.81rem;
+    font-weight: 700;
+
+}
+.logo img{
+    width: 5.37756rem;
+    height: 2.5rem;
+}
+.logo h1 span{
+    color: var(--pink);
+    
+}
+
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.3rem;
+    align-items: center;
+    width: 50%;
+    /* border: 1px solid red; */
+    color: #3C354F;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+#follow{
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 0.4rem 1.5rem;
+}
+.follow p{
+    min-width: fit-content;
+    margin-right: 0.8rem;
+}
+
+.nav-right img{
+    display: block;
+    width: 2.1rem;
+
+}
+
+
+
+
+/* ______________________Main____________________ */
+
 
 
 
@@ -16,8 +108,29 @@ body{
 
 
 @media screen and (max-width: 767px) {
-    
+    nav,.nav-right{
+        flex-direction: column;
+    }
+
+    nav{
+        align-items: center;
+    }
+    .nav-right{
+        margin-top: 3.5rem;
+        margin-bottom: 4.8rem;
+    }
+    #follow{
+        margin-top: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+
 }
+
+
+/* ---------------Tablet Bonus------------- */
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
     
 }
