@@ -36,7 +36,7 @@ body{
     color: #0B0223;
     font-size: 3rem;
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .dark{
     color: var(--dark);
@@ -59,6 +59,13 @@ body{
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 2rem 0;
+}
+.plain-text{
+    color: #534C64;
+    /* text-align: right; */
+    font-size: 1.125rem;
+    line-height: 1.875rem; /* 166.667% */
 }
 /* ______________________Header_________________ */
 nav{
@@ -182,12 +189,45 @@ nav > *{
 .banner-right{
     width:42%;
 }
-header{
-    border-bottom: 1px solid red;
-}
+
 /* ______________________Main____________________ */
+.gamer-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.gamer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gamer-left{
+    width: 60%;
+
+}
 
 
+.gamer-right{
+    width: 40%;
+    text-align: right;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.gamer-right >* {
+    margin: 1rem 0;
+}
+.gamer-right > h2{
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    /* margin-top: 0; */
+}
+.gamer-right > .plain-text{
+    min-width: fit-content;
+}
+.our{
+    color: #534C64; 
+    font-size: 1.66rem;
+    font-weight: 700;
+
+}
 
 
 
@@ -242,6 +282,28 @@ header{
         height: fit-content;
         background-image: url(./images/Group\ 14.png);
         background-size: contain;
+    }
+
+    /* ---------------MAIN--------------- */
+    /* ------Gamer_-------- */
+    .gamer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .gamer>*{
+        width: 100%;
+    }
+    .gamer-right{
+        margin-top: -4rem;
+        padding: 0;
+        text-align: center;
+        scale: 0.7;
+    }
+    .gamer-container{
+        background: none;
+    }
+    .our{
+        white-space: nowrap;
     }
 }
 
