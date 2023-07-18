@@ -5,16 +5,21 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: Work Sans;
 }
 :root {
     --pink:#FF42A5;
+    --dark:#0B0223;
+    --grey:#534C64;
+    --auqa:#4EC5F7;
 }
 
 
 /* ----------------Shared styles-------------  */
 .centered-section{
     width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 img{
     width: 100%;
@@ -27,12 +32,41 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
+.section-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.dark{
+    color: var(--dark);
+}
+.pink{
+    color: var(--pink);
+}
+.gradient{
+    background-image: none,linear-gradient(180deg, #F948B2, #8758F1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.btn-main{
+    display: inline-flex;
+    padding: 1.3125rem 2.5rem;
+    border-radius: 3rem;
+    color: white;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 /* ______________________Header_________________ */
 nav{
     display: flex;
     gap: 10%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 2rem 0;
+    margin-bottom: 1rem;
 }
 nav > *{
     min-width: min-content;
@@ -48,7 +82,6 @@ nav > *{
 
 .logo > h1{
     text-align: center;
-    font-family: Work Sans;
     font-size: 2.81rem;
     font-weight: 700;
 
@@ -94,10 +127,63 @@ nav > *{
     width: 2.1rem;
 
 }
+/* ------------------BANNER---------------------- */
+.banner-container{
+    /* background-color: lightgreen; */
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
 
+}
+.banner{
+    display: flex;
+    /* border: 1px solid blue; */
+    /* gap: 2%; */
 
+    
+}
+.banner-left{
+    width:58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-left h2{
+    font-size: 5.9375rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.banner-left p{
+    color: var(--grey);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    
+}
+.article-box{
+    flex-direction: column;
+    min-width: fit-content;
+    width:60%;
+    /* border: 1px solid red; */
+}
+.button-container button{
+    margin-right: 1rem;
+}
+.pink-btn{
+    background-color: var(--pink);
+}
+.aqua-btn{
+    background-color: var(--auqa);
+}
 
-
+.banner-right{
+    width:42%;
+}
+header{
+    border-bottom: 1px solid red;
+}
 /* ______________________Main____________________ */
 
 
@@ -111,7 +197,6 @@ nav > *{
     nav,.nav-right{
         flex-direction: column;
     }
-
     nav{
         align-items: center;
     }
@@ -123,6 +208,13 @@ nav > *{
         margin-top: 2rem;
         width: 100%;
         justify-content: center;
+    }
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner > *{
+        width: 80%;
     }
 
 }
