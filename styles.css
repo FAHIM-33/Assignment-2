@@ -35,7 +35,7 @@ body{
 .section-title{
     color: #0B0223;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     /* text-transform: uppercase; */
 }
 .dark{
@@ -67,6 +67,7 @@ body{
     font-size: 1.125rem;
     line-height: 1.875rem; /* 166.667% */
 }
+
 /* ______________________Header_________________ */
 nav{
     display: flex;
@@ -193,6 +194,7 @@ nav > *{
 /* ______________________Main____________________ */
 .gamer-container{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    margin-bottom: 6rem;
 }
 .gamer{
     display: flex;
@@ -226,15 +228,78 @@ nav > *{
     color: #534C64; 
     font-size: 1.66rem;
     font-weight: 700;
+}
 
+/* --------------FunnnY------------------- */
+.funny h2, .funny p{
+    text-align: center;
+    margin: auto;
+}
+.funny > p{
+    margin: 1rem 0 2rem;
+}
+
+.video-container{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.7rem;
+    /* border: 2px solid red; */    
+}
+figure figcaption{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.875rem; /* 150% */
+
+    /* border: 1px solid red; */
+}
+/* .bg{
+    background-color: #000;
+    border-radius: 0rem;
+    
+} */
+/* ---------------PLAY---------------- */
+.play{
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+.play-left{
+    width: 50%;
+    position: relative;
+}
+
+.play-right{
+    width: 40%;
+}
+.play-right p{
+    margin-top: 1rem;
+}
+
+.layer{
+    width: 40%;
+    position: absolute;
+    bottom: -4rem;
+    right: -6rem;
+}
+
+.play-copy{
+    flex-direction: row-reverse;
+}
+
+.play-copy .layer{
+    width: 40%;
+    position: absolute;
+    bottom: -4rem;
+    left: -6rem;
 }
 
 
-
-
-
-
 @media screen and (max-width: 767px) {
+
     nav,.nav-right{
         flex-direction: column;
     }
@@ -247,7 +312,7 @@ nav > *{
     }
     .nav-right{
         margin-top: 3.5rem;
-        /* margin-bottom: 4.8rem; */
+        margin-bottom: 4.8rem;
     }
     #follow{
         margin-top: 2rem;
@@ -275,6 +340,7 @@ nav > *{
     }
     .article-box{
         /* border: 1px solid red; */
+
     }
     .banner-left{
         /* border: 1px solid blue; */
@@ -282,6 +348,7 @@ nav > *{
         height: fit-content;
         background-image: url(./images/Group\ 14.png);
         background-size: contain;
+        background-repeat: repeat-y;
     }
 
     /* ---------------MAIN--------------- */
@@ -301,10 +368,54 @@ nav > *{
     }
     .gamer-container{
         background: none;
+        margin-bottom: 0;
     }
     .our{
         white-space: nowrap;
+        font-size: 1.2rem;
     }
+    /* --------------Funny---------------- */
+    .section-title{
+        font-size: 2rem;
+    }
+    .video-container{
+        grid-template-columns: repeat(1,1fr);
+        width: 85%;
+        margin: auto;
+        scale: 0.8;
+    }
+    .funny{
+        padding: 0;
+
+    }
+    .funny h2{
+        font-size: 1.55rem;
+    }
+    .funny > p{
+        font-size: 0.6rem;
+        margin: 0rem auto -5rem auto;
+    }
+    /* ------------Play----------- */
+    .play{
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        text-align: center;
+        scale: 0.8;
+    }
+    .play > *{
+        width: 90%;
+    }
+    .play-left h2{
+        font-size: 1.5rem;
+    }
+    .play-right > p{
+        font-size: 1rem;
+    }
+    .play-right{
+        scale: 0.7;
+    }
+
+
 }
 
 
