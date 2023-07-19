@@ -337,7 +337,8 @@ figure figcaption{
     padding: 0.2rem 0.5rem 0.2rem 0.2rem;
     background-color: white;
 
-    flex: 0 0 calc(20% - 0.5rem);
+    flex: 0 0 calc(18% - 4px);
+    /* flex: 0 0 18%; */
 }
 .catagory .capsule:nth-child(n+6){
     /* grid-row: 2 / span 1fr; */
@@ -371,7 +372,73 @@ figure figcaption{
     color: var(--pink);
 }
 
+/* ________________________Footer__________________ */
 
+footer{
+    background-color: var(--dark);
+    
+
+}
+footer .logo{
+    color: white;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: center;
+    
+}
+.foot-box{
+    width: 60%;
+    /* text-align: center; */
+    /* border: 1px solid yellow; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 7rem 0;
+}
+.foot-box .logo{
+    
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 4rem auto;
+}
+.links a{
+    color: #FFF;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.social{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    
+}
+.social img{
+    width: 2.5rem;
+}
+.social button{
+    background-color: transparent;
+}
+.social button:hover{
+    background-color: rgba(255, 50, 221, 0.394);
+    cursor: pointer;
+}
+.policy{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 4rem auto 2rem auto;
+    
+}
+.last{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.7rem;
+    font-weight: 500;
+
+}
+.foot-box p br{
+    display: none;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -527,6 +594,29 @@ figure figcaption{
     }
     .catagory .img{
         width: 2rem;
+    }
+    /* _____________Footer_____________ */
+    .foot-box{
+        width: 100%;
+        scale: 0.6;
+        padding: 0;
+    }
+    .links ,.social{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .links{
+        grid-row-gap: 1rem;
+    }
+    .social{
+        grid-row-gap: 1.9rem;
+    }
+    .policy{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    .foot-box p br{
+        display: block;
     }
 
 }
