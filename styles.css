@@ -563,10 +563,7 @@ footer .logo{
         /* border: 1px solid green; */
         background-image: none;
     }
-    .article-box{
-        /* border: 1px solid red; */
 
-    }
     .banner-left{
         /* border: 1px solid blue; */
         width: 100%;
@@ -601,10 +598,18 @@ footer .logo{
     }
     /* --------------Funny---------------- */
 
+    .funny{
+
+    }
+    .video-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
     .section-title{
         font-size: 2rem;
     }
-    .video-container{
+
+    /*.video-container{
         grid-template-columns: repeat(1,1fr);
         width: 85%;
         margin: auto;
@@ -622,7 +627,7 @@ footer .logo{
     .funny > p{
         font-size: 0.6rem;
         margin: 0rem auto -5rem auto;
-    }
+    } */
 
 
     /* ------------Play----------- */
@@ -755,5 +760,9 @@ footer .logo{
     .video-container{
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 3rem;
+    }
+    .overlay-text{
+        top: 43%;
+        left: 43%; 
     }
 }
