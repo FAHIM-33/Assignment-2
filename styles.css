@@ -299,13 +299,77 @@ figure figcaption{
 
 .play-copy .layer{
     width: 40%;
-    position: absolute;
+    position: absolute; 
     bottom: -4rem;
     left: -6rem;
 }
 
 /* ------------------Catagory-------------- */
+.cat-container{
+    background-image: linear-gradient(90deg, rgba(255, 66, 165, 0.03), rgba(255, 66, 165, 0.03));
+    
+}
+.catagory{
+    /* display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(5,1fr); */
+    /* border: 1px solid black; */
 
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+    padding: 5rem 0;
+}
+
+.capsule{
+    /* box-sizing: ; */
+    min-width: fit-content;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 4rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+    background-color: white;
+
+    flex: 0 0 calc(20% - 0.5rem);
+}
+.catagory .capsule:nth-child(n+6){
+    /* grid-row: 2 / span 1fr; */
+    /* margin-left: 50%; */
+    /* flex: 0 0 calc(25% - 3.5rem); */
+    /* border: 1px solid blue; */
+}
+
+.capsule p{
+    white-space: nowrap;
+    color: var(--dark);
+    font-weight: 600;
+    margin: 0 0.8rem 0 0.5rem;
+
+}
+.capsule .img{
+    /* display: inline-block; */
+    /* width: 4rem; */
+    /* object-fit: cover; */
+    display: inline-flex;
+    align-items: center;
+    width: 3rem;
+}
+
+.catagory .capsule:hover{
+    border: 2px solid var(--pink);
+
+}
+
+.catagory .capsule:hover p{
+    color: var(--pink);
+}
 
 
 
@@ -434,6 +498,35 @@ figure figcaption{
     .play-copy .layer{
         bottom: -2.5rem;
         left: -4rem;
+    }
+    .catagory{
+        width: 85%;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0.5rem;
+        justify-items: center;
+        /* padding: 0 2rem 0 2rem; */
+    }
+    .catagory img{
+        width: 1.5rem;
+    }
+    .catagory p{
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    .catagory .capsule{
+        /* border: 1px solid red; */
+        margin: 0px;
+        gap: 0;
+        padding: 0.2rem 0.3rem 0.2rem 0.2rem;
+    }
+    .catagory > div{
+        justify-content: center;
+        align-items: center;
+    }
+    .catagory .img{
+        width: 2rem;
     }
 
 }
