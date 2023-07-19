@@ -42,7 +42,11 @@ body{
     color: var(--dark);
 }
 .pink{
-    color: var(--pink);
+    /* color: var(--pink); */
+    background-image: none,linear-gradient(180deg, #F948B2 0%, #df58f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .gradient{
     background-image: none,linear-gradient(180deg, #F948B2, #8758F1);
@@ -60,6 +64,9 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     margin: 2rem 0;
+}
+.btn-main:hover{
+    background-color: #bf0073;
 }
 .plain-text{
     color: #534C64;
@@ -297,6 +304,11 @@ figure figcaption{
     left: -6rem;
 }
 
+/* ------------------Catagory-------------- */
+
+
+
+
 
 @media screen and (max-width: 767px) {
 
@@ -386,6 +398,7 @@ figure figcaption{
     }
     .funny{
         padding: 0;
+        margin-bottom: -10rem;
 
     }
     .funny h2{
@@ -414,7 +427,14 @@ figure figcaption{
     .play-right{
         scale: 0.7;
     }
-
+    .layer{
+        bottom: -2.5rem;
+        right: -4rem;
+    }
+    .play-copy .layer{
+        bottom: -2.5rem;
+        left: -4rem;
+    }
 
 }
 
